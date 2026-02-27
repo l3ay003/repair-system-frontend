@@ -43,6 +43,30 @@
     แจ้งซ่อมรถยนต์
   </button>
 
+<div class="modal fade" id="repairModal">
+  <div class="modal-dialog modal-fullscreen-sm-down">
+    <div class="modal-content p-3">
+
+      <h5>แจ้งซ่อมรถยนต์</h5>
+
+      <select id="licensePlate" class="form-select mb-2"></select>
+
+      <input type="number" id="mileage" class="form-control mb-2" placeholder="เลขไมล์">
+
+      <textarea id="problem" class="form-control mb-2" placeholder="รายละเอียดอาการ"></textarea>
+
+      <input type="number" id="estimateCost" class="form-control mb-2" placeholder="ประเมินค่าใช้จ่าย">
+
+      <input type="text" id="location" class="form-control mb-2" placeholder="สถานที่ซ่อม">
+
+      <input type="file" id="imageFile" class="form-control mb-3">
+
+      <button class="btn btn-primary w-100" onclick="submitRepair()">ส่งแจ้งซ่อม</button>
+
+    </div>
+  </div>
+</div>
+  
   <hr>
 
   <div id="repairList"></div>
